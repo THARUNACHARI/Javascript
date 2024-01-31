@@ -17,3 +17,11 @@ if(sal > 40000){
 else{
     console.log("Not Eligible")
 }
+
+
+// proStack
+
+// submitHandler
+
+// floder structure
+
