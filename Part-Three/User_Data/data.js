@@ -498,7 +498,7 @@ let users=[{"id":1,"name":"Sheena","email":"sslisby0@nydailynews.com","gender":"
 {"id":498,"name":"Haskel","email":"hwapplesdt@uol.com.br","gender":"Male"},
 {"id":499,"name":"Noak","email":"ndargiedu@indiatimes.com","gender":"Male"},
 {"id":500,"name":"Remington","email":"rmcgeachiedv@deliciousdays.com","gender":"Male"}]
-function display_UserData(){
+/*function display_UserData(){
     let rows=""
     for(user of users){
         rows = rows + `<tr>
@@ -509,7 +509,7 @@ function display_UserData(){
        </tr>`
     }
     document.getElementById('userData').innerHTML = rows
-}
+}*/
 let a =0
 for(user of users){
 if(user.gender==='Male'){
@@ -517,3 +517,17 @@ a++
 }
 }
 console.log(a)
+
+let display_UserData = ()=>{
+    let rows=""
+    for(user of users){
+        rows = rows + `<tr>
+                        <td>${user.id}</td>
+                        <td>${user.name}</td>
+                        <td>${user.email}</td>
+                        <td>${user.gender}</td>
+                       </tr>`
+    }
+    document.getElementById('userData').innerHTML = rows
+    //document.getElementById('userData').innerHTML = "GM"
+}
