@@ -1,0 +1,6 @@
+let goTOGoa =(success,failure)=>{
+    let acc_Bal = 51000;
+    acc_Bal> 40000? success("Go 2 Goa ! Enjoy")
+                   : failure("Go to PG! Sleep!")
+}
+goTOGoa(()=>{},()=>{})
